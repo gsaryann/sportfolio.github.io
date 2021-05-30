@@ -160,3 +160,23 @@ ul {
 .nav__list-item.active>a {
     font-weight: 700;
 }
+
+@media (max-width: 480px) {
+    .wrapper {
+        overflow: auto;
+    }
+    .wrapper__content {
+        flex-direction: column;
+    }
+    .nav__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav__list-item {
+        margin: 0 3em;
+    }
+    .portfolio__content {
+        flex-direction: column-reverse;
+    }
+}
